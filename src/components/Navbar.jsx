@@ -11,16 +11,17 @@ const Navbar = () => {
             <div className='px-2 flex justify-between items-center w-full h-full'>
                 <div className='flex items-center'>
                     <h1 className='text-3xl font-bold mr-4 sm:text-4xl'>Casalco</h1>
+                
+                    
 
-                    <ul className='hidden md:flex'>
+                </div>
+                <ul className='hidden md:flex'>
                         <li>Home</li>
                         <li>About Us</li>
                         <li>Products</li>
                         <li>Services</li>
                         <li>Contact Us</li>
                     </ul>
-
-                </div>
                 <div className='hidden md:flex pr-4'>
                     <button className='border-none bg-transparent text-black mr-4 '>Sign In</button>
                     <button className='px-8 py-3'>Register</button>
@@ -33,6 +34,7 @@ const Navbar = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                     }
+
 
                 </div>
             </div>

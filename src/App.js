@@ -5,9 +5,8 @@ function App() {
     <>
     
 
-       <Navbar>
+       <Navbar/>
        <Hero/>
-       </Navbar>
      
    
   </>
