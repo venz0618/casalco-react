@@ -1,29 +1,25 @@
 import React from 'react'
-import Carousel from "flat-carousel";
-import img1 from '../assets/casalco.jpg'
-import img2 from '../assets/Casalco-3.jpg'
-import img3 from '../assets/Casalco-4.jpg'
-import img4 from '../assets/Casalco-6.jpg'
-import img5 from '../assets/Casalco-7.jpg'
+import Carousel from '../components/Carousel'
+
 
 function Hero() {
-  const images = [
-    {
-      src: img2
-    },
-    {
-      src: img3
+  // const images = [
+  //   {
+  //     src: img2
+  //   },
+  //   {
+  //     src: img3
 
-    },
-    {
-      src: img4
+  //   },
+  //   {
+  //     src: img4
 
-    },
-    {
-      src: img5
+  //   },
+  //   {
+  //     src: img5
 
-    },
-  ];
+  //   },
+  // ];
   return (
     <div className="w-full h-screen bg-zinc-200 flex flex-col justify-between">
       <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
@@ -46,7 +42,7 @@ function Hero() {
               />
             ))}
           </Carousel> */}
-          <img className='w-full' src={img1} alt="/" />
+          <Carousel/>
         </div>
       </div>
     </div>
