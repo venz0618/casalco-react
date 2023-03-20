@@ -5,7 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+        backgroundImage:{
+              'casalco': "url('./assets/casalco.jpg')"
+            },
     },
   },
   plugins: [],

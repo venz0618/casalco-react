@@ -1,37 +1,53 @@
 import React from 'react'
-import {
-  CloudUploadIcon,
-  DatabaseIcon,
-  PaperAirplaneIcon,
-  ServerIcon,
-} from '@heroicons/react/solid'
-
+import Carousel from "flat-carousel";
 import img1 from '../assets/casalco.jpg'
+import img2 from '../assets/Casalco-3.jpg'
+import img3 from '../assets/Casalco-4.jpg'
+import img4 from '../assets/Casalco-6.jpg'
+import img5 from '../assets/Casalco-7.jpg'
 
 function Hero() {
+  const images = [
+    {
+      src: img2
+    },
+    {
+      src: img3
+
+    },
+    {
+      src: img4
+
+    },
+    {
+      src: img5
+
+    },
+  ];
   return (
     <div className="w-full h-screen bg-zinc-200 flex flex-col justify-between">
       <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
         <div className='flex flex-col justify-center md:items-start w-full px-2 py-8'>
-          <p className='text-2xl'>Unique Sequencing & Production</p>
-          <h1 className='py-3 text-5xl md:text-7xl font-bold'>Cloud Management</h1>
-          <p className='text-2xl'>This is our Tech brand.</p>
-          <button className='py-3 px-6 sm:w-[60%] my-4'>Get Started</button>
+
+          <div className='border-y-2 border-orange-500 text-[#000] font-bold uppercase'>
+            <h1 className=" text-orange-500 text-3xl">Welcome to CASALCO</h1>
+          </div>
+          <h1 className='py-3 text-5xl md:text-5xl font-bold'>SAVE MONEY AND MONEY WILL SAVE YOU</h1>
+          <p className='text-xl text-stone-600'>Do not save what is left after spending, but spend what is left after saving</p>
+          <button className='py-3 px-6 sm:w-[60%] my-4'>BECOME A MEMBER NOW</button>
         </div>
         <div>
+          {/* <Carousel>
+            {images.map((image, index) => (
+              <div
+                key={index}
+                className="demo-item"
+                style={{ backgroundImage: "url(" + image.src + ")" }}
+              />
+            ))}
+          </Carousel> */}
           <img className='w-full' src={img1} alt="/" />
-      </div>
-      <div className='absolute flex flex-col py-8 md:min-w-[760px] bottom-[-5%]
-      mx-1 md:left-1/2 transform md:-translate-x-1/2 bg-zinc-200 
-      border border-slate-300 rounded-xl text-center shadow-xl'>
-        <p>Data Services</p>
-        <div className='flex justify-between flex-wrap px-4'>
-          <p className='flex px-4 py-2 text-state-500'><CloudUploadIcon className=' h-6 text-indigo-600'/>App Security</p>
-          <p className='flex px-4 py-2 text-state-500'><DatabaseIcon className=' h-6 text-indigo-600'/> App Dashboard</p>
-          <p className='flex px-4 py-2 text-state-500'><ServerIcon className=' h-6 text-indigo-600'/> App Cloud Date</p>
-          <p className='flex px-4 py-2 text-state-500'><PaperAirplaneIcon className=' h-6 text-indigo-600'/> App API</p>
         </div>
-      </div>
       </div>
     </div>
   )
